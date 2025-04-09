@@ -14,6 +14,14 @@ from core.integrais_definidas import calcular_integral_definida
 
 # Funções de integrais múltiplas
 
+st.set_page_config(
+    page_title="Calculadora de Cálculo",
+    layout="centered",
+    page_icon="🧮"
+)
+
+st.title("🧮 Calculadora de Cálculo Diferencial e Integral")
+
 def integral_dupla(expr, var1, a1, b1, var2, a2, b2, plot=False):
     x, y = symbols(f"{var1} {var2}")
     func = sympify(expr)
